@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+body {
+    background-color: #222233;
+    font-size: 16px;
+}
+
+body header {
+    text-align: center;
+}
+
+body h2 {
+    font-family: 'Barrio', cursive;
+    font-size: 3rem;
+    margin: 1rem;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    text-align: center;
+    margin-top: 3rem;
+    display: inline-block;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn-container div {
+    display: inline-block;
+    padding: 1.5em;
+    background: antiquewhite;
+    font-family: inherit;
+    font-weight: bold;
+    border: 2px solid #ccc;
+    box-shadow: 4px 3px 8px 5px rgba(170, 204, 255, 0.18);
+    margin-right: 35px;
+}
+
+.btn-container button {
+    background: #f7f7f6;
+    width: 22%;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 1px 2px 10px 4px #36393e;
+    font-family: 'Luckiest Guy', cursive;
+    cursor: pointer;
+    outline: 0;
+}
+
+.btn-container button:hover {
+    background: #bad6d0;
+    box-shadow: 1px 2px 10px 4px #404856;
+    transition: 0.6s ease;
+}
+
+.btn-container button:first-child {
+    margin-right: 5%;
+}
+
+h3#timer {
+    font-family: 'Luckiest Guy', cursive;
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 3.5rem auto;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.square {
+    width: 30%;
+    background: blueviolet;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 15%;
+}
+
+@media screen only and (min-width: 34em) {
+    body .btn-container {
+        padding: 2% 10%;
+    }
+}

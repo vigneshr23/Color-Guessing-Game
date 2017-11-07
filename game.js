@@ -11,8 +11,7 @@ var start = document.getElementById("start");
 var stop = document.getElementById("stop");
 var interval = 0,
     interval1 = window.interval1 = 0,
-    timer = window.timer = 12,
-    inGame = false;
+    timer = window.timer = 12;
 
 /*//var queryColor = null;
 var rgb = [];
@@ -87,29 +86,19 @@ function stopGame() {
     clearInterval(interval1);
     window.timer = 12;
     clearInterval(interval);
-    inGame = false;
 }
 
-function automaticColorChanger() {
-    colorChanger();
-    interval1 = setInterval(startTimer, 1000);
-    interval = setInterval(colorChanger, 12000);
-    inGame = true;
-}
 
 start.addEventListener("click", function() {
-
-    //colorChanger();
+    colorChanger();
     /*  if (interval) {
           clearInterval(interval);
       }
       if (interval1) {
           clearInterval(interval1);
       }*/
-    /*interval1 = setInterval(startTimer, 1000);
-    interval = setInterval(colorChanger, 12000);*/
-    if (!inGame)
-        automaticColorChanger();
+    interval1 = setInterval(startTimer, 1000);
+    interval = setInterval(colorChanger, 12000);
 });
 
 stop.addEventListener("click", function() {
@@ -122,7 +111,6 @@ currSquare.forEach(function(el) {
         if (this.style.backgroundColor == header.style.backgroundColor) {
             alert("Yep, you got it!");
             stopGame();
-            automaticColorChanger();
         }
         // level up logic
         else {
